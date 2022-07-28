@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background: hsl(0, 9%, 82%);
+  --light-brown: hsl(22, 32%, 46%);
+  --dark-brown: hsl(0, 35%, 23%);
+  --shadow: hsla(0, 0%, 0%, 0.8);
+}
+
+body {
+  height: 100vh;
+  background: var(--background);
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: "Space Mono", monospace;
+  /* font-family: "Trispace", sans-serif; */
+}
+.cookie-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    260deg,
+    var(--light-brown) 0%,
+    var(--dark-brown) 100%
+  );
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  height: 10rem;
+  border: none;
+  border-radius: 0.6rem;
+
+  padding: 1rem;
+
+  overflow: hidden;
+  filter: drop-shadow(5px 10px 20px var(--shadow));
+}
+
+#cookie {
+  padding-right: 1rem;
+  transform: scale(0.8);
+  overflow: visible;
+}
+
+.cookie-text {
+  width: 80%;
+  line-height: 1.6;
+}
+
+.cookie-title {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.cookie-subtitle {
+  font-weight: bold;
+  padding: 0.7rem 0rem;
+  font-size: 0.6rem;
+}
+.cookie-button {
+  border: none;
+  padding: 0.4rem;
+  color: var(--dark-brown);
+
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
